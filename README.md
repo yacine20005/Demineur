@@ -35,3 +35,75 @@ Le programme doit permettre au moins le réglage des aspects suivants du jeu :
 On pourra modifier le jeu afin de réduire la part de hasard nécessaire pour gagner : chaque fois que l'utilisateur a besoin de deviner une case sans être certain qu'elle ne contient pas de mine, le jeu peut par exemple jouer pour lui ou colorer une case "sûre".
 
 Une autre amélioration possible est de maintenir un tableau des meilleurs scores pour chaque niveau de difficulté, sauvegardé même à la fermeture du programme.
+
+## Instructions d'installation
+
+Pour installer et configurer le jeu, suivez ces étapes :
+
+1. Clonez le dépôt :
+   ```sh
+   git clone https://github.com/yacine20005/Demineur.git
+   cd Demineur
+   ```
+
+2. Installez les dépendances requises :
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+3. Exécutez le jeu :
+   ```sh
+   python main.py
+   ```
+
+## Exemples d'utilisation
+
+Pour démarrer une partie, exécutez la commande suivante :
+```sh
+python main.py
+```
+
+Contrôles de base :
+- Clic gauche pour découvrir une case.
+- Clic droit pour marquer une case comme contenant une mine.
+
+## Directives de contribution
+
+Nous accueillons les contributions pour améliorer le jeu. Pour contribuer, suivez ces étapes :
+
+1. Forkez le dépôt.
+2. Créez une nouvelle branche pour votre fonctionnalité ou correction de bug :
+   ```sh
+   git checkout -b feature-name
+   ```
+3. Validez vos modifications :
+   ```sh
+   git commit -m "Description de vos modifications"
+   ```
+4. Poussez vers la branche :
+   ```sh
+   git push origin feature-name
+   ```
+5. Créez une pull request.
+
+Pour signaler des problèmes, veuillez utiliser le traqueur de problèmes GitHub.
+
+## Structure du code
+
+Le dépôt contient les fichiers suivants :
+
+- `main.py` : Le point d'entrée principal du jeu.
+- `affichage.py` : Contient des fonctions pour afficher le jeu dans le terminal et graphiquement.
+- `fltk.py` : Une bibliothèque pour créer des interfaces utilisateur graphiques.
+- `interne.py` : Contient la logique interne du jeu et les fonctions.
+- `menu.py` : Contient des fonctions pour afficher et gérer le menu du jeu.
+- `README.md` : Ce fichier, contenant la description du jeu et les instructions.
+
+## Informations de contact
+
+Pour toute question ou demande, veuillez nous contacter à [email@example.com](mailto:email@example.com).
+
+## Ressources connexes
+
+- [Documentation FLTK](https://www.fltk.org/documents.php)
+- [Documentation Python](https://docs.python.org/3/)
