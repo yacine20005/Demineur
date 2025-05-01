@@ -1,66 +1,66 @@
-# Démineur
-## Principe du jeu
+# Minesweeper
+## Game Principle
 
-Le jeu de démineur consiste en une grille rectangulaire, dont toutes les cases sont initialement couvertes (cachées). Un certain nombre de cases, déterminées de manière aléatoire au démarrage, contiennent une mine explosive. Le but du jeu est de découvrir le plus rapidement possible toutes les cases ne contenant pas de mine.
+The Minesweeper game consists of a rectangular grid, with all cells initially covered (hidden). A certain number of cells, determined randomly at the start, contain an explosive mine. The goal of the game is to uncover all cells that do not contain a mine as quickly as possible.
 
-Le joueur peut agir de différentes manières sur le plateau de jeu :
+The player can interact with the game board in different ways:
 
-- Découvrir une case par un clic gauche sur celle-ci. Dans ce cas, si la case contient une mine, la partie est perdue. Sinon, la case est découverte ;
-- Indiquer par un clic droit qu'il pense qu'une mine se trouve sur une certaine case. La case est alors marquée pour éviter un clic malencontreux.
+- Uncover a cell by left-clicking on it. In this case, if the cell contains a mine, the game is lost. Otherwise, the cell is uncovered;
+- Indicate by right-clicking that they think a mine is located on a certain cell. The cell is then marked to avoid an accidental click.
 
-Lorsqu'une case ne contenant pas de mine est découverte, deux cas de figure se présentent. 
+When a cell that does not contain a mine is uncovered, two scenarios arise:
 
-- Si la case est voisine d'au moins une mine, un nombre entier compris entre 1 et 8, indiquant le nombre total de mines sur les huit cases voisines, est affiché dans la case. Aucune autre case n'est alors découverte.
-- Si la case n'est voisine d'aucune mine, toutes les cases adjacentes à cette case doivent être (récursivement !) découvertes. 
+- If the cell is adjacent to at least one mine, an integer between 1 and 8, indicating the total number of mines on the eight neighboring cells, is displayed in the cell. No other cells are uncovered.
+- If the cell is not adjacent to any mine, all cells adjacent to this cell must be (recursively!) uncovered.
 
-## Paramétrage
+## Configuration
 
-Le programme permet le réglage des aspects suivants du jeu :
+The program allows the following aspects of the game to be configured:
 
-- nombre de lignes et de colonnes de la grille ;
-- nombre de mines présentes ;
-- ouverture initiale d'une case (ou non) ;
-- taille de la fenêtre ;
-- variantes...
+- number of rows and columns of the grid;
+- number of mines present;
+- initial opening of a cell (or not);
+- window size;
+- variants...
 
-## Instructions d'installation
+## Installation Instructions
 
-Pour installer et configurer le jeu, suivez ces étapes :
+To install and configure the game, follow these steps:
 
-1. Clonez le dépôt :
+1. Clone the repository:
    ```sh
    git clone https://github.com/yacine20005/Demineur.git
    cd Demineur
    ```
 
-2. Exécutez le jeu :
+2. Run the game:
    ```sh
    python main.py
    ```
 
-## Exemples d'utilisation
+## Usage Examples
 
-Pour démarrer une partie, exécutez la commande suivante :
+To start a game, run the following command:
 ```sh
 python main.py
 ```
 
-Contrôles de base :
-- Clic gauche pour découvrir une case.
-- Clic droit pour marquer une case comme contenant une mine.
+Basic controls:
+- Left-click to uncover a cell.
+- Right-click to mark a cell as containing a mine.
 
-## Structure du code
+## Code Structure
 
-Le dépôt contient les fichiers suivants :
+The repository contains the following files:
 
-- `main.py` : Le point d'entrée principal du jeu.
-- `affichage.py` : Contient des fonctions pour afficher le jeu dans le terminal et graphiquement.
-- `fltk.py` : Une bibliothèque pour créer des interfaces utilisateur graphiques.
-- `interne.py` : Contient la logique interne du jeu et les fonctions.
-- `menu.py` : Contient des fonctions pour afficher et gérer le menu du jeu.
-- `README.md` : Ce fichier, contenant la description du jeu et les instructions.
+- `main.py`: The main entry point of the game.
+- `affichage.py`: Contains functions to display the game in the terminal and graphically.
+- `fltk.py`: A library for creating graphical user interfaces.
+- `interne.py`: Contains the internal logic of the game and functions.
+- `menu.py`: Contains functions to display and manage the game menu.
+- `README.md`: This file, containing the description of the game and instructions.
 
-## Ressources connexes
+## Related Resources
 
-- [Documentation FLTK](https://www.fltk.org/documents.php)
-- [Documentation Python](https://docs.python.org/3/)
+- [FLTK Documentation](https://www.fltk.org/documents.php)
+- [Python Documentation](https://docs.python.org/3/)
